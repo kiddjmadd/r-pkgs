@@ -107,10 +107,10 @@ Place spaces around all infix operators (`=`, `+`, `-`, `<-`, etc.). The same ru
 
 ```{r, eval = FALSE}
 # Good
-average <- mean(feet / 12 + inches, na.rm = TRUE)
+average <- mean(feet * 12 + inches, na.rm = TRUE)
 
 # Bad
-average<-mean(feet/12+inches,na.rm=TRUE)
+average<-mean(feet*12+inches,na.rm=TRUE)
 ```
 
 There's a small exception to this rule: `:`, `::` and `:::` don't need spaces around them. (If you haven't seen `::` or `:::` before, don't worry - you'll learn all about them in [namespaces](#namespace).)
